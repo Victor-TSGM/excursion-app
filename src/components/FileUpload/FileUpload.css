@@ -1,0 +1,84 @@
+.file-upload-wrapper {
+    height: 96%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.attachment-action-bar {
+    width: 100%;
+    margin: 15px 0 5px 0;
+}
+
+.file-upload-input-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.text-input {
+    width: 100%;
+    margin: 0 5px 10px 5px;
+}
+
+.drop-zone {
+    border: 4px dashed black;
+    width: 100%;
+    height: 45vh;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.drop-zone:hover {
+    background-color: #f0f0f0;
+}
+
+.upload-info {
+    width: 100%;
+    font-size: 18px;
+    color: gray;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.select-file-preview {
+    width: 100%;
+    font-size: 18px;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.file-icon {
+    width: 100%;
+    color: gray;
+}
+
+.file-label {
+    width: 100%;
+    color: gray;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.file-name {
+    width: 100%;
+    color: gray;
+    font-size: 20px;
+}

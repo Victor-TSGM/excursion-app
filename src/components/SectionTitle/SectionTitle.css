@@ -1,0 +1,11 @@
+.fs-section-subtitle {
+    min-height: 50px;
+    background-color: var(--sidebar-color);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-size: 1.25rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

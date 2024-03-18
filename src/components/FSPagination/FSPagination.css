@@ -1,0 +1,53 @@
+.fs-pagination-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.fs-pagination-container .fs-input-container {
+    display: inline-flex;
+    width: 100px;
+    padding: 0;
+    margin-left: 10px;
+}
+
+.fs-page-button {
+    border-radius: 100%;
+    border: none;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin-right: 3px;
+}
+
+.fs-page-button.nav {
+    font-size: 10px;
+}
+
+.pagination-info {
+    font-size: 12px;
+}
+
+.fixed_headers thead tr {
+    position: relative;
+}
+
+.fs-table-body tr:nth-child(even) {
+    background-color: #DDD;
+}
+
+.fixed_headers thead th {
+    position: sticky;
+    top: 0;
+    /* REQUIRED: https://stackoverflow.com/a/43707215 */
+    background-color: #333;
+    resize: horizontal;
+    overflow: auto;
+    min-width: 70px;
+}

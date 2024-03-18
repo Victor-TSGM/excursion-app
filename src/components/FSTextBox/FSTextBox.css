@@ -1,0 +1,56 @@
+.fs-text-box-container {
+    padding: 0;
+    display: flex; 
+    gap: 10px;
+    border-bottom: 1px solid #00000060;
+}
+
+.fs-text-box-focused {
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.fs-text-box-focused .fs-text-box-label {
+    color: var(--primary-color);
+    opacity: 1;
+}
+
+.fs-text-box-container.full-border input {
+    border-radius: 5px;
+}
+
+.fs-textbox-field {
+    position: relative;
+    flex: 1;
+}
+
+.fs-text-box-label {
+    position: absolute;
+    top: 10px;
+    font-size: 14px;
+    transition: all 0.1s linear;
+    pointer-events: none;
+    color: var(--input-color);
+    opacity: 0.60;
+}
+
+.fs-text-box-leading-icon, .fs-text-box-trailing-icon {
+    color: var(--input-color);
+}
+
+.fs-text-box-icon {
+    padding: 10px;
+    padding-bottom: 0;
+}
+
+.fs-text-box-floating-label .fs-text-box-label,
+.fs-text-box-has-value .fs-text-box-label {
+    top: -5px;
+    font-size: 11px;
+}
+
+.fs-text-box {
+    padding: 15px 5px 5px 0;
+    border: none;
+    outline: none;
+    width: 100%;
+}

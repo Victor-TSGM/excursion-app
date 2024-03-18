@@ -1,0 +1,15 @@
+
+.fs-datepicker-label {
+    position: absolute;
+    top: -10px;
+    font-size: 11px;
+    transition: all 0.1s linear;
+    pointer-events: none;
+    color: #00000060;
+    z-index: 2;
+  }
+  
+  .fs-datepicker-container {
+    border-bottom: 1px solid grey;
+    position: relative;
+  }

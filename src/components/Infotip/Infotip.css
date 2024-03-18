@@ -1,0 +1,17 @@
+.infotip-wrapper{
+  position: relative;
+  display: flex;
+  align-items: top;
+}
+
+.infotip{
+  padding: 0.25em 0.5em;
+}
+
+.infotip-children{
+  width: 100%;
+}
+
+.infotip-children:empty{
+  width: fit-content;
+}

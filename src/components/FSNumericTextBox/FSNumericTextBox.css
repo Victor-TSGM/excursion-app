@@ -1,0 +1,55 @@
+.fs-numeric-container {
+    padding: 0;
+    display: flex; 
+    gap: 10px;
+    border-bottom: 1px solid #00000060;
+    position: relative;
+}
+
+.fs-numeric-focused {
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.fs-numeric-label {
+    position: absolute;
+    top: 10px;
+    font-size: 16px;
+    transition: all 0.1s linear;
+    pointer-events: none;
+    color: var(--input-color);
+    opacity: 0.60;
+}
+
+.fs-numeric-focused .fs-numeric-label {
+    color: var(--primary-color);
+    opacity: 1;
+}
+
+.fs-numeric-floating-label .fs-numeric-label,
+.fs-numeric-has-value .fs-numeric-label {
+    top: -5px;
+    font-size: 11px;
+}
+
+.fs-numeric {
+    padding: 15px 5px 5px 0;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.fs-numeric-actions {
+    display: flex;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.fs-numeric-container input::-webkit-outer-spin-button,
+.fs-numeric-container input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.fs-numeric-container input[type=number] {
+  -moz-appearance: textfield;
+}

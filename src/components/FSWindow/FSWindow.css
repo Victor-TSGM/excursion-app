@@ -1,0 +1,45 @@
+.window-container {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 980;
+}
+
+.window-card {
+  width: 90%;
+  height: 90%;
+  background-color: white;
+  z-index: inherit;
+  position: relative;
+  box-shadow: 0 0 8px rgba(0,0,0,0.12), 0 32px 64px rgba(0,0,0,0.14);
+  border: none;
+  border-radius: 10px;
+}
+
+.window-header {
+  background-color: var(--secondary-color);
+  min-height: 45px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  padding-left: 15px;
+  color: white;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.window-content {
+  position: absolute;
+  top: 58px;
+  bottom: 0;
+  width: 100%;
+  overflow: auto;
+}
+  

@@ -1,0 +1,34 @@
+.fs-side-bar {
+    background-color: var(--sidebar-color);
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 64px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+}
+
+.fs-sidebar-open {
+    width: 220px;
+}
+
+.fs-sidebar-open .menu-item { 
+    justify-content: start;
+}
+
+.fs-side-bar .fs-menu-icon {
+    min-width: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+    .fs-side-bar {
+        display:none;
+    }
+
+    .fs-sidebar-open {
+        display:initial;
+        width: 220px;
+    }
+}

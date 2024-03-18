@@ -1,0 +1,167 @@
+﻿.fs-navbar-tasks-container {
+    height: 100%;
+    vertical-align: top;
+    border: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65px;
+}
+
+.fs-navbar-tasks-container .jobList {
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    bottom: -305px;
+    right: -170px;
+    z-index: 99;
+    overflow: auto;
+    background-color: #cecece48;
+    /* background-color: rgba(255, 255, 255, 0.4); */
+    backdrop-filter: blur(3px);
+}
+
+.fs-new-job {
+    color: #71767C;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+/* width */
+
+.jobList::-webkit-scrollbar {
+    width: 8px;
+}
+
+
+/* Track */
+
+.jobList::-webkit-scrollbar-track {
+  background: #cecece48;
+  backdrop-filter: blur(3px);
+}
+
+
+/* Handle */
+
+.jobList::-webkit-scrollbar-thumb {
+    background: #770466;
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+.jobList::-webkit-scrollbar-thumb:hover {
+    background: #770466;
+}
+
+.hourString {
+    font-size: 14px;
+}
+
+.jobCard {
+    padding: 15px;
+    background-color: #0133f2;
+    color: white;
+    font-weight: bold;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    min-height: 78px;
+}
+
+.jobCard .btn {
+    color: white;
+    background-color: #00000030;
+}
+
+.jobCard .fs-load-bar {
+    background-color: #770466;
+}
+
+.jobCard.success {
+    background-color: #58ca3d;
+}
+
+.jobCard.error {
+    background-color: #e10001;
+}
+
+.fs-navbar-tasks {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fs-navbar-tasks:hover {
+    background-color: #00000020;
+}
+
+.fs-load-bar {
+    height: 5px;
+    width: 20px;
+    background-color: #1b6ec2;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    animation: loading 2s infinite;
+}
+
+@keyframes loading {
+    0% {
+        width: 0;
+    }
+    30% {
+        width: 100%;
+        left: 0;
+    }
+    90% {
+        left: 100%;
+        width: 0;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+.empty-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    padding: 30px;
+    font-size: 80px;
+}
+
+.empty-list h4 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.empty-list-text{
+  width: 80%;
+}
+
+@media all and (max-width: 450px) {
+    .fs-navbar-tasks-container .jobList {
+        height: calc(100vh - 86px);
+        bottom: calc(-100vh + 86px);
+    }
+}
+
+@media all and (max-width: 400px) {
+    .fs-navbar-tasks-container .jobList {
+        width: 300px;
+    }
+}

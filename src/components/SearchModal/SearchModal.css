@@ -1,0 +1,226 @@
+﻿.select-field-display {
+  border-bottom: 1px solid lightgrey;
+  position: relative;
+  width: 100%;
+  min-height: 55px;
+  display: flex;
+  align-items: end;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  overflow-x: auto;
+}
+
+.select-fields-container {
+  padding: 5px;
+  margin-top: 20px;
+  white-space: nowrap;
+  /* height: 100%; */
+}
+
+.btn-search-modal-advanced.disabled {
+  background-color: var(--disabled-dark);
+  cursor: not-allowed;
+}
+
+.btn-search-modal-advanced.unique.disabled {
+  border-color: var(--disabled-dark);
+  color: var(--disabled-dark);
+  cursor: not-allowed;
+}
+
+.select-field-label {
+  position: absolute;
+  top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 76px);
+  color: var(--primary-color);
+}
+
+.search-modal-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15px;
+  background-color: lightgrey;
+  border-radius: 10px;
+  border: 1px solid var(--primary-color);
+  position: relative;
+}
+
+.btn-search-modal-advanced {
+  min-height: 86px;
+  background-color: var(--primary-color);
+  color: white;
+  width: 60px;
+  border: 1px solid var(--primary-color);
+  border-radius: 0px 7px 7px 0;
+}
+
+.btn-search-modal-advanced.unique {
+  background-color: lightgray;
+  color: var(--primary-color);
+  border-right: none;
+  border-top: none;
+  border-bottom: none;
+  border-radius: 0px 11px 11px 0;
+}
+
+.btn-search-modal-advanced:hover,
+.btn-search-modal-advanced:focus {
+  background-color: black;
+  color: white;
+  box-shadow: none;
+}
+
+.btn-search-modal-advanced.unique:hover,
+.btn-search-modal-advanced.unique:focus {
+  background-color: black;
+  color: white;
+  box-shadow: none;
+}
+
+.btn-add-item {
+  font-size: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: 5px;
+  z-index: 100;
+}
+
+.btn-add-item.disabled {
+  color: var(--disabled-dark);
+  cursor: auto;
+}
+
+.btn-add-item:hover {
+  transform: scale(1.1);
+}
+
+.btn-add-item.disabled:hover {
+  transform: none;
+}
+
+.btn-remove-item {
+  font-size: 30px;
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 33px;
+  z-index: 100;
+}
+
+.btn-remove-item:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.select-field-display .e-float-text.e-label-top {
+  top: -15px;
+}
+.search-modal-selected-item-row {
+  padding: 5px;
+  padding-left: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e0e0e0;
+}
+
+.search-modal-selected-item-row button {
+  background-color: #e3165b !important;
+}
+
+
+/* width */
+.select-field-display::-webkit-scrollbar{
+  height: 7px !important;
+}
+
+
+/* Track */
+.select-field-display::-webkit-scrollbar-track{
+  background: lightgrey !important;
+}
+
+
+/* Handle */
+.select-field-display::-webkit-scrollbar-thumb{
+  background: #343a40d4 !important;
+  border-radius: 20px;
+}
+
+
+/* Handle on hover */
+/* .select-field-display::-webkit-scrollbar-thumb:hover{
+  background: #555 !important;
+} */
+
+.grid-overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: grey;
+  z-index: 10;
+  opacity: 0.2;
+}
+
+.fs-search-window-container {
+  position: fixed;
+  left: 64px;
+  right: 0;
+  top: 64px;
+  bottom: 0;
+  background-color: #00000065;
+  z-index: 999999999999;
+  padding: 60px;
+}
+
+.fs-search-window-card {
+  background-color: white;
+  height: 100%;
+  box-shadow: 2px 0px 30px #00000050;
+  position: relative;
+}
+
+.fs-search-window-header {
+  background-color: var(--secondary-color);
+  min-height: 45px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px;
+  color: white;
+  align-items: center;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.fs-search-window-content {
+  position: absolute;
+  top: 58px;
+  bottom: 0;
+  width: 100%;
+  overflow: auto;
+}
+.fs-search-window-content::-webkit-scrollbar {
+  width: 8px;
+}
+.fs-search-window-content::-webkit-scrollbar-track {
+  background: white;
+}
+.fs-search-window-content::-webkit-scrollbar-thumb {
+  background: #343a40d4;
+  border-radius: 10px;
+}
+.fs-search-window-content::-webkit-scrollbar-thumb:hover {
+  background: #343a40d4;
+}
+

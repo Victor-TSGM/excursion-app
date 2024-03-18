@@ -1,0 +1,25 @@
+.fs-crud-container {
+    width: 100%;
+    height: calc(100vh - 64px);
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.fs-crud-editor {
+    background-color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 5;
+    overflow: auto;
+}
+
+.fs-crud-table {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,102 @@
+.fs-table-container {
+    border: 1px solid #ddd;
+    overflow: auto;
+    display: block;
+    white-space: nowrap;
+    height: calc(100% - 60px);
+    position: relative;
+}
+
+.fs-table {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.fs-table-pagination-section {
+    padding: 3px 20px;
+    border: 1px solid #ddd;
+    border-top: none;
+    height: 60px;
+}
+
+.fs-table-row-header {
+    border-bottom: 1px solid #ddd;
+}
+
+.fs-table-header {
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 10px);
+}
+
+.fs-table-row {
+    border-bottom: 1px solid #dddddd80;
+    z-index: 1;
+    border-left: 5px solid transparent;
+}
+
+.fs-table-row-header:hover {
+    background-color: #ddd;
+}
+
+.fs-table-row:not(.fs-table-row-header):hover,
+.fs-table-row.selected {
+    background-color: #ddd;
+    border-left: 5px solid #00000070;
+}
+
+.fs-table-column-value {
+    height: 100%;
+}
+
+
+.fs-table-column-action {
+    display: flex;
+    align-items: center;
+}
+
+.fs-table-column-action .fs-checkbox-container {
+    font-size: 12px;
+    height: 100%;
+    padding-top: 5px;
+}
+
+.fs-table-column {
+    display: inline-flex;
+    vertical-align: middle;
+    position: relative;    
+    text-wrap: wrap;
+}
+
+.fs-table-row-header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+}
+
+.fs-table-value {
+    padding: 10px;
+}
+
+.fs-table-row-detail {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-left: none;
+    border-top: none;
+}
+
+.fs-table-resizer {
+    width: 10px;
+    position: absolute;
+    border-right: 1px solid #ddd;
+    right: 0;
+    top: 10px;
+    bottom: 5px;
+    cursor: col-resize;
+}

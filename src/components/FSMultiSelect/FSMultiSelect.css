@@ -1,0 +1,12 @@
+.fs-multiselect-label {
+  position: absolute;
+  top: -10px;
+  font-size: 11px;
+  transition: all 0.1s linear;
+  pointer-events: none;
+  color: #00000060;
+}
+
+.fs-multiselect-container {
+  position: relative;
+}

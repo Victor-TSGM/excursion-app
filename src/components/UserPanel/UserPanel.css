@@ -1,0 +1,88 @@
+﻿.fs-userpanel {
+    position: fixed;
+    right: 0;
+    top: 64px;
+    bottom: 0;
+    width: 25vw;
+    background-color: white;
+    z-index: 1001;
+    display: none;
+    border-left: 1px solid lightgrey;
+}
+
+.fs-userpanel-open {
+    display: flex;
+    flex-direction:column;
+}
+
+.fs-userpanel-logout {
+    width: 24.5vw;
+    color: #fff;
+    background-color: #c82333;
+    text-decoration: none;
+    min-width: 48px;
+    min-height: 48px;
+    margin-bottom: 5px;
+    padding: .5rem 1rem;
+    line-height: 1.5;
+    border-radius: .3rem;
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: text-bottom;
+    align-self:center;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    border: none;
+}
+
+.fs-userinfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    background-color: var(--sidebar-color);
+}
+
+.fs-usericon-large {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border: 4px solid #fff;
+    border-radius: 5%;
+    margin-top: 30px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+}
+
+.fs-username {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.filler {
+    flex-grow:1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.filler p {
+    color: seagreen;
+    font-size: 0.8rem;
+}
+
+@media only screen and (max-width: 650px) {
+    .fs-userpanel-open {
+        width: 100vw;
+    }
+
+    .fs-userpanel-logout {
+        width: 95vw;
+    }
+}

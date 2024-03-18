@@ -1,0 +1,26 @@
+.fs-checkbox-container {
+    border-radius: 5px;
+    font-size: 18px;
+    height: 48px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.fs-checkbox-container.block {
+    border: solid 1px var(--primary-color);
+    flex: 1;
+}
+
+.fs-checkbox-container.block.fs-checkbox-container:hover {
+    background-color: black;
+    color: white !important;
+    border-color: black;
+    transition: 0.3s;
+}
+
+.fs-checkbox-container.block.checked {
+    background-color: var(--primary-color);
+    color: white !important;
+}

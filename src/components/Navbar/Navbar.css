@@ -1,0 +1,114 @@
+.fs-nav-bar {
+  background-color: var(--navbar-color);
+  width: calc(100% - 64px);
+  height: 64px;
+  left: 64px;
+  top: 0;
+  border-bottom: solid 1px lightgrey;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  /* z-index: 999; */
+}
+
+.fs-navbar-menubutton {
+  width: 64px;
+  height: 64px;
+  left: 0px;
+  display: none;
+  background-color: transparent;
+  border: none;
+}
+
+.fs-page-title {
+  font-size: 1.1em;
+  /* display: block; */
+  margin-left: 23px;
+  align-items: center;
+  padding-left: 20px;
+  padding: 0 20px;
+  background-color: var(--sidebar-color);
+  /* vertical-align: top; */
+  color: white;
+  height: 101%;
+  position: relative;
+}
+
+.fs-navbar-user {
+  background-color: white;
+  height: 100%;
+  padding-right: 20px;
+  border: none;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  min-width: 150px;
+  max-width: 25vw;
+  color: var(--sidebar-color)
+}
+
+.fs-navbar-username {
+  display: grid;
+  justify-items: end;
+  margin-right: 0.9em;
+  line-height: normal;
+}
+
+.fs-page-title-bar {
+  position: absolute;
+  height: 3px;
+  width: calc(100% - 8px);
+  background-color: rgba(var(--primary-color), 0.5);
+  bottom: 2px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-top-left-radius: 1px;
+  border-top-right-radius: 1px;
+}
+
+.fs-navbar-language {
+  background-color: var(--navbar-color);
+  height: 100%;
+  vertical-align: top;
+  padding: 0 20px 0 20px;
+  border: none;
+  display: flex;
+  align-content: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--sidebar-color);
+  line-height: normal;
+}
+
+.fs-navbar-item:hover {
+  background-color: #21252834;
+}
+
+.fs-navbar-language>* {
+  height: 100%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media only screen and (max-width: 768px) {
+  .fs-nav-bar {
+    width: 100%;
+    left: 0px;
+  }
+
+  .fs-navbar-menubutton {
+    display: initial;
+  }
+
+  .fs-navbar-user {
+    min-width: 50px;
+  }
+
+  .fs-navbar-username {
+    display: none;
+  }
+}

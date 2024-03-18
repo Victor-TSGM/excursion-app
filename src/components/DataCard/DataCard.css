@@ -1,0 +1,46 @@
+.follow-up-container {
+    display: inline-block;
+    width: 100%;
+}
+
+.follow-up-overview {
+    padding: 10px;
+    width: 100%;
+    margin: 5px;
+}
+
+.follow-up-overview-section {
+    background-color: lightgray;
+    margin: 2px 0px 5px 0px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid black;
+}
+
+.follow-up-overview .follow-up-text {
+    display: block;
+}
+
+.data-wrapper {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.title-text {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.date-text {
+    font-size: 16px;
+}
+
+.title-value-text {
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+.title-notes-text {
+    font-size: 16px;
+}

@@ -1,0 +1,31 @@
+﻿.fs-crud-bar {
+    background-color: var(--secondary-color);
+    min-height: 64px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.fs-crud-bar-sticky {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.fs-crud-bar button {
+    height: 100%;
+    border-radius: 0;
+    width: 48px;
+}
+
+@media all and (min-width: 1301px) {
+    .fs-crud-bar button {
+        width: 150px;
+    }
+}
+
+@media all and (max-width: 1300px) {
+    .buttonTitle {
+        display: none;
+    }
+}

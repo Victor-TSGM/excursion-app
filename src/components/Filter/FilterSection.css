@@ -1,0 +1,7 @@
+﻿.filters-section button:focus {
+    box-shadow: none !important; 
+}
+
+.filters-section button {
+    height: 100%;
+}

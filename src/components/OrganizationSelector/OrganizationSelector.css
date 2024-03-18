@@ -1,0 +1,65 @@
+﻿.organizationSelectorContainer {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 300px;
+  background-color: whitesmoke;
+  z-index: 9999999;
+}
+
+.organization-selector-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.725em 0.8em;
+}
+
+.btn-close-organization-selector-header{
+  cursor: pointer;
+}
+
+.organization-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+  max-height: calc(100vh - 47.2px);
+  overflow: auto;
+}
+
+.organizationSelectorOverlay,
+.organizationSelectorSplash {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999998;
+  background-color: #00000090;
+}
+
+.btn-organization:focus {
+  box-shadow: none;
+}
+
+.organizationSelectorSplash {
+  z-index: 99999999;
+  top: 10px;
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.organizationSelectorSplash .spinner-border {
+  width: 5rem;
+  height: 5rem;
+}
+
+.organizationSelectorSplash span {
+  font-size: 1.5rem !important;
+}

@@ -1,0 +1,32 @@
+.qr-code-view-wrapper {
+    width: 100%;
+    height: 70%;
+    margin-top: 10px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.qr-code {
+    margin: auto;
+}
+
+.qr-code-code {
+    width: 100%;
+    text-align: center;
+}
+
+.description {
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+.qr-code-actions-wrapper {
+    width: 100%;
+    text-align: center;
+}
+
+.print-button {
+    width: 15vw;
+    height: 10vh;
+}

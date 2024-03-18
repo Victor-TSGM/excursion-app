@@ -1,0 +1,70 @@
+﻿.fs-time-picker-info {
+    padding: 10px;
+    border: 1px solid grey;
+    text-align: center;
+    background-color: white;
+}
+
+    .fs-time-picker-info * {
+        border: none !important;
+        text-align: center;
+    }
+
+    .fs-time-picker-info input {
+        font-size: 12px !important;
+    }
+
+    .fs-time-picker-info label {
+        color: grey;
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+.fs-time-picker-btn-up {
+    border-bottom: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.fs-time-picker-btn-down {
+    border-top: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.fs-time-picker-btn-up:focus,
+.fs-time-picker-btn-down:focus {
+    box-shadow: none;
+}
+
+.fs-time-picker-fieldset {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    border: 1px solid var(--primary-color);
+}
+
+    .fs-time-picker-fieldset legend {
+        width: auto;
+        padding: 5px 15px;
+        margin-bottom: 0;
+        font-size: 15px;
+        font-weight: bold;
+        background-color: var(--primary-color);
+        color: white;
+        border-radius: 20px;
+    }
+
+
+.fs-time-picker-show-value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+    .fs-time-picker-show-value label {
+        font-size: 2.5vw;
+        color: var(--primary-color);
+        font-weight: bold;
+    }

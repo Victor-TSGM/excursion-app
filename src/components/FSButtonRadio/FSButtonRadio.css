@@ -1,0 +1,51 @@
+.slotButton {
+    border-radius: 0;
+    flex: 1;
+    border-left-width: 1px;
+    border-right-width: 0;
+    font-size: 13px;
+    height: 48px;
+}
+
+.slotButton:focus {
+    box-shadow: none;
+}
+
+.slotButton-full {
+    flex: 1;
+    border-radius: 5px;
+    font-size: 13px;
+    height: 48px;
+}
+
+.slotButton-full:focus {
+    box-shadow: none;
+}
+
+.slotButton-left {
+    border-radius: 0;
+    flex: 1;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-right-width: 0;
+    font-size: 13px;
+    height: 48px;
+}
+
+.slotButton-left:focus {
+    box-shadow: none;
+}
+
+.slotButton-right {
+    border-radius: 0;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    flex: 1;
+    border-left-width: 1px;
+    font-size: 13px;
+    height: 48px;
+}
+
+.slotButton-right:focus {
+    box-shadow: none;
+}

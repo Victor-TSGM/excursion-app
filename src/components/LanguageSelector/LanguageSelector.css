@@ -1,0 +1,42 @@
+﻿.fs-language-selector {
+    position: fixed;
+    right: 0;
+    top: 64px;
+    bottom: 0;
+    width: 20vw;
+    min-width: 280px;
+    background-color: white;
+    z-index: 1001;
+    display: none;
+    border-left: 1px solid lightgrey;
+}
+
+.fs-language-selector-open {
+    display: flex;
+    flex-direction:column;
+}
+
+.fs-language-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  color: var(--primary-color);
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 5px;
+  margin-bottom: 0;
+}
+
+.fs-language-item-selected, 
+.fs-language-item:hover{
+  background-color: var(--primary-color);
+  color: white;
+  /* border-radius: 15px; */
+}
+
+@media only screen and (max-width: 650px) {
+    .fs-language-selector-open {
+        width: 100vw;
+    }
+}
